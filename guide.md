@@ -11,6 +11,9 @@
     - [ボトムプレートへのPCB基板の取り付け](#ボトムプレートへのpcb基板の取り付け)
   - [調整編](#調整編)
   - [拡張編](#拡張編)
+    - [Key の追加](#key-の追加)
+    - [Rotary Encoder の追加](#rotary-encoder-の追加)
+    - [Display の追加](#display-の追加)
 
 ## 完成イメージ
 
@@ -167,12 +170,31 @@ DROP の MT3 Black を取り付けたときの様子です。
 + 小指クラスタの調整
  -　Control, Shift keyの位置
    [詳細]
-s
+
  
 ## 拡張編
 
-キーの追加、Rotary Encoder の追加方法について説明します。
+キーの追加、Rotary Encoder、OLED の追加方法について説明します。
 
-Pangaea の設計は e3w2q さんが開発されています。つまり、SU120 の作者さんなのです。Function keyや Rotary Encoder などを自由に追加することができます。
+Pangaea の設計は e3w2q さんなのです。つまり、SU120 の作者さんです。SU120 と組み合わせることで Function keyや Rotary Encoder などを自由に追加することができます。
 
-   [詳細]
+作例はこちらです。
+[photo]
+
+### Key の追加
+
+まずキーを追加します。
+
+[詳細]
+
+### Rotary Encoder の追加
+
+次に Rotary Encoder を追加します。
+
+[詳細]
+
+### Display の追加
+
+OLEDの表示例です。
+
+[詳細]
