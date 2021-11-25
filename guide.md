@@ -173,6 +173,6 @@ s
 
 キーの追加、Rotary Encoder の追加方法について説明します。
 
-Pangaea の設計は e3w2q さんが KiCAD を用いて開発されています。つまり、SU120 の作者さんなのです。Function keyや Rotary Encoder などを自由に追加することができます。
+Pangaea の設計は e3w2q さんが開発されています。つまり、SU120 の作者さんなのです。Function keyや Rotary Encoder などを自由に追加することができます。
 
    [詳細]
