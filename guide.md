@@ -1,4 +1,4 @@
-# Pangaea Build Guide for Testers
+# Pangaea Build Guide for Beta Testers
 
 この文章は Panagea Keyboard を組み立てるための手引き書です。興味を持って頂いたテスター向けのガイドになります。
 
