@@ -84,7 +84,14 @@ Pangaea では上記の親指クラスタ、小指クラスタの物理的な位
 
 これで三つのクラスタが用意できました。
 
-それぞれ top plate にスイッチを挿入し、PCB に固定します。
+それぞれ top plate にスイッチを挿入し、PCB に固定します。それぞれのクラスタのトッププレートの方向です。
+
+
+![picture 5](images/1651ed1e01f4abee588f21293dc81c73a5ee6cbbf57d6cacc2041a118a28469f.png)  
+
+![picture 6](images/0477079cc677149b845d37c62d5b3265d9a6df82ff215ac21fa13e02ba05858f.png)  
+
+![picture 7](images/d27c56cb22e5b8cc0af3af3c9623e22fa6d8d71f143a236a87373760cafe7f19.png)  
 
 ### クラスタ間の信号接続
 
