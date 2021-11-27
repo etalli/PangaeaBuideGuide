@@ -1,6 +1,8 @@
 # Pangaea Build Guide for Beta Testers
 
-この文章は Panagea Keyboard を組み立てるための手引き書です。興味を持って頂いたテスター向けのガイドになります。
+この文章は Panagea Keyboard を組み立てるための手引き書です。興味を持って頂いたテスター向けのガイドになります。想定読者は、QMK を使ったことがある、キーボードを組み立てたことがある方になります。
+
+なお、ハンダ付けは初めて、キーボードの software の QMK Firmware を触ったことがない方のガイドはなんらかの形で今後整備される予定です。
 
 - [Pangaea Build Guide for Beta Testers](#pangaea-build-guide-for-beta-testers)
   - [完成イメージ](#完成イメージ)
@@ -119,11 +121,14 @@ XHコネクタを用いた場合の実装例です。こちたも直接、線を
 この状態で Firmware を書き込んで動作を確認します。
 
 QMK の directory に移動してから、
-```
+
+```console
 $ cd qmk_firmware
 ```
+
 ProMicro に firmware を書き込みます。Compileも一緒に行います。
-```
+
+```console
 $ qmk flash -kb pangaea -km default
 ```
 
