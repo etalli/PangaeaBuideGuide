@@ -261,14 +261,35 @@ OLEDの表示例です。
 標準構成での組み立てに必要な部品の一覧です。親指クラスタのキー数を減らす場合はその分が減少することになり、片手3キー構成では左右でマイナス2ずつででそれぞれ54となります。
 
 - ダイオード(スルーホールまたはchip部品) (4x4 + 4x2 + 1x5) x 2 = 58
+  - 1N4148
+  - https://akizukidenshi.com/catalog/g/gI-00743/
 - スイッチソケット (MXまたは choc 用) 29 x 2 = 58
+  - Kailh Hot-Swappable PCB Socket
 - スイッチ  (MXまたは choc 用) 29 x 2 = 58
+  - Cherry MX 互換スイッチ、5pin が安定です。お好きなモノで
+  - choc スイッチ
 - Pro Micoro x 2
+  - https://www.switch-science.com/catalog/6228/
+- Reset switch x 2
+  - タクトスイッチ
+  - https://akizukidenshi.com/catalog/g/gP-08074/
 - 3.5mm TRRS ケーブル x 1
 - USB ケーブル x 1
-- スタンドオフ (9mm, XHコネクタを利用しない直接接続では4mm-5mm(未検証))
-- M2 ネジ 6mm (5mmはちょっと不足ですが使えないことはないです) (16+18)x2
+- M2 スタンドオフ (9mm, XHコネクタを利用しない直接接続では4mm-5mm(未検証)
+  - ARB-2009E
+  - https://www.hirosugi-net.co.jp/shop/g/g2396/
+
+- M2 ネジ 6mm 
+  - (5mmはちょっと不足ですが使えないことはないです) (16+18)x2
+  - F-0206-E
+  - https://www.hirosugi-net.co.jp/shop/g/g36907/
+  - 見える部分には低背のこちらが見かけがよいです。また背面にも高さがでないためおすすめです。
+    - FX-0250EB 5mm 鉄(三価クロメート黒色) ＋低頭精密小ねじ(ラミクス)
+    - https://wilco.jp/products/F/FX-EB.html#page3
 - M2 ナット (コネクタ部品用 4x2)
+   - BNT-02
+   - https://www.hirosugi-net.co.jp/shop/g/g37954/
+
 
 Rev.3では MXスイッチ利用時は、コネクタ部のナットとPCBが干渉するため高めになっています。
 
