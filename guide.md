@@ -47,7 +47,7 @@ what's pangaea?
 
 </div>
 
-White Paper 全文は[こちら](https://github.com/e3w2q/Pangaea-keyboard/blob/ain/pangaea-whitepaper.md)です。
+White Paper 全文は[こちら](https://github.com/e3w2q/Pangaea-keyboard/blob/main/pangaea-whitepaper.md)です。
 
 </details>
 
