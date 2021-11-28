@@ -25,11 +25,30 @@
 
 ![picture 1](images/4654de285b3f48fc8ee407a733680955d16ebc803d51c34f99765b41f4ffe5e8.png)  
 
+<details><summary>Pangaea keyboard のコンセプトは White Paper で説明されています。</summary>
+
+下記は引用です。
+
+```text
+what's pangaea?
+// 何なのか
+
+キーレイアウトをいくつかの部分 "島" に切り離し、それぞれの島の位置を自由に調整できるようにしたキーボードです。
+
+// 何ができるのか
+
+島を動かすことで、個人の好みや手の形（癖、体型）に合わせてキー配置を調整できます。 
+```
+
+White Paper 全文は[こちら](https://github.com/e3w2q/Pangaea-keyboard/blob/ain/pangaea-whitepaper.md)です。
+
+</details>
+
 ## 組立編
 
 Pangaea Keyboard の特徴の一つは親指クラスタと小指クラスタの場所が調整できることです。そのメカ的な調整機構のために部品は大きく三つのクラスタに分かれています。
 また組み立ての順番を間違えると取り返しがつかないなどの構成にはなっていないため気楽に進められます。
-つまり、ダイオード、スイッチをハンダづけてして、分割になっているところをケーブルで接続して、可動部品をネジ止めし、スイッチを取り付けて終わりです。
+つまり、ダイオード、スイッチ、マイコンなどをハンダ付けてして、分割されている部品をケーブルで接続して、可動部品をネジ止めし、スイッチ、キーキャップを取り付けてら完成です。
 
 用語を確認します。
 写真のPCBは左上がメインクラスタ、右上が小指クラスタ、下が親指クラスタです。
@@ -69,6 +88,7 @@ Pangaea では上記の親指クラスタ、小指クラスタの物理的な位
 ダイオードの方向は、PCB上の白い線と、ダイオードの黒い線を合わせます。
 
 ![picture 8](images/92ce04aa23efa934309d4d564b36739e237e41bc6f97a7b27b288d3fab1753d2.png)  
+
 - スイッチソケット
 - Pro Micro (USB Type-Cタイプがおすすめ)
 - Reset switch
@@ -134,13 +154,13 @@ XHコネクタを用いた場合の実装例です。こちたも直接ワイヤ
 QMK の directory に移動してから、
 
 ```sh
-$ cd qmk_firmware
+cd qmk_firmware
 ```
 
 ProMicro に firmware を書き込みます。Compileも一緒に行います。
 
 ```sh
-$ qmk flash -kb pangaea -km default
+qmk flash -kb pangaea -km default
 ```
 
 一部のスイッチが入力できないなど問題があればハンダ付けをよく確認してください。原因として考えられることとしては下記です。
@@ -150,7 +170,7 @@ $ qmk flash -kb pangaea -km default
 - スイッチソケットを逆に取り付けていて、そもそもスイッチが刺さっていない
 - スイッチソケットのハンダ付けが不十分で、接触不良
 - スイッチの足が折れていて、正常にスイッチソケットに刺さっていない
-   
+
 そんなミスするわけない！などと言わずによく見てみましょう。
 
 ### ボトムプレートの組み立て
@@ -160,7 +180,6 @@ $ qmk flash -kb pangaea -km default
 部品をピンクの矢印のところにPCBのマークがくるように並べます。
 
 ![picture 1](images/15282b31c44fe6ef8862abb38c801023dfbcf05c0192a9374a89fd2af4d39e05.png)  
-
 
 ![picture 19](images/965143ae04164a4b04ba0ac7c3d9436b181fd4520849607ac215952e7ac29c34.png)  
 
@@ -233,9 +252,9 @@ x,y軸方向はTy-=-1〜1 でかつTx =- -1〜3の範囲で調整できます。
 
 キーの追加、Rotary Encoder、OLED の追加方法について説明します。
 
-Pangaea の設計は e3w2q さんなのです。つまり、SU120 の作者さんです。SU120 と組み合わせることで Function keyや Rotary Encoder などを自由に追加することができます。
+Pangaea の設計は e3w2q さんなのです。つまり、SU120 の作者さんです。SU120 と組み合わせることで Function keyや Rotary Encoder などを追加することができます。
 
-作例はこちらです。
+作例はこちらです。Rev.2 での様子です。
 [photo]
 
 ### Key の追加
@@ -262,7 +281,7 @@ OLEDの表示例です。
 
 - ダイオード(スルーホールまたはchip部品) (4x4 + 4x2 + 1x5) x 2 = 58
   - 1N4148
-    - https://akizukidenshi.com/catalog/g/gI-00743/
+    - <https://akizukidenshi.com/catalog/g/gI-00743/>
   - SMD
     - Google it.
 - スイッチソケット (MXまたは choc 用) 29 x 2 = 58
@@ -275,11 +294,11 @@ OLEDの表示例です。
     - Google it.
 
 - Pro Micoro x 2
-  - https://www.switch-science.com/catalog/6228/
+  - <https://www.switch-science.com/catalog/6228/>
 
 - Reset switch x 2
   - タクトスイッチ
-  - https://akizukidenshi.com/catalog/g/gP-08074/
+  - <https://akizukidenshi.com/catalog/g/gP-08074/>
 
 - 3.5mm TRRS ケーブル x 1
   - Google it.
@@ -289,34 +308,33 @@ OLEDの表示例です。
 
 - M2 スタンドオフ (9mm, XHコネクタを利用しない直接接続では4mm-5mm(未検証)
   - ARB-2009E
-  - https://www.hirosugi-net.co.jp/shop/g/g2396/
+  - <https://www.hirosugi-net.co.jp/shop/g/g2396/>
 
-- M2 ネジ 6mm 
+- M2 ネジ 6mm
   - (5mmはちょっと不足ですが使えないことはないです) (16+18)x2
   - F-0206-E, 6mm
-  - https://www.hirosugi-net.co.jp/shop/g/g36907/
+  - <https://www.hirosugi-net.co.jp/shop/g/g36907/>
   - 見える部分には低背のこちらが見かけがよいです。また背面にも高さが出ないでないためおすすめです。しかしながら、rev.3では8mmを使うと干渉するため、5mmでがんばって使えばすべてこのネジでも大丈夫です。コネクタ部分に使う長さのおすすめはワッシャ、スプリングワッシャを考慮すると6mmです。5mmでは長さが不足します。ワッシャだけ、あるいはスプリングワッシャだけなら5mmで大丈夫ですが効果が薄れます。
     - FX-0250EB 5mm 鉄(三価クロメート黒色) ＋低頭精密小ねじ
-    - https://wilco.jp/products/F/FX-EB.html#page3
+    - <https://wilco.jp/products/F/FX-EB.html#page3>
 - M2 ナット (コネクタ部品用 4x2)
-   - BNT-02
-   - https://www.hirosugi-net.co.jp/shop/g/g37954/
+  - BNT-02
+  - <https://www.hirosugi-net.co.jp/shop/g/g37954/>
 
-
-Rev.3では MXスイッチ利用時は、コネクタ部のナットとPCBが干渉するため高めになっています。
+Rev.3では MXスイッチ利用時はコネクタ部のナットとPCBが干渉するため少し高めの9mmのスタンドオフ長となっています。
 
 以下オプションです
 
 - ワッシャ
   - 使用するとスムーズに可動部分が動きます
-  - スプリングワッシャと組み合わせて使うと緩みがなく、かつ、可動部分を動かしやすくなります。
-    - Google it.
+  - スプリングワッシャと組み合わせて使うと緩みがなく、かつ可動部分を動かしやすくなります。
+  - Google it.
 
 - スプリングワッシャ
   - 使用するとネジが緩みにくくなるため強くおすすめです
-    - Google it.
+  - Google it.
 
-- XH 6ピンケーブル付コネクタ(使うと高さは出ますが配線や分解が楽です)
-    - Google it.
-    - 長さ15cm−20cm程度のものが販売されています。もちろん自分でワイヤに端子を固定してケーブル自作もできますが時間もかかりますし専用の工具も必要になります。
-
+- XH 6ピンケーブル付コネクタ
+  - 使うと高さは出ますが配線や分解が楽です
+  - 長さ15cm−20cm程度のものが販売されています。もちろん自分でワイヤに端子を固定してケーブル自作もできますが時間もかかりますし専用の工具も必要になります。
+  - Google it.
