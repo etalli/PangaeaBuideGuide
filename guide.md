@@ -29,6 +29,11 @@
 
 ![picture 1](images/4654de285b3f48fc8ee407a733680955d16ebc803d51c34f99765b41f4ffe5e8.png)  
 
+稼働する範囲を確認されたい方はこちらのvideoをご覧ください。
+
+- 小指![picture 1](../images/IMG_6006.mov)  
+- 親指
+
 <details>
 <summary>Pangaea keyboard のコンセプトは White Paper で説明されています。[この行の先頭の ▶ のクリックで詳細表示します]
 </summary><div>
