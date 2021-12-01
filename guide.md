@@ -31,7 +31,7 @@
 
 稼働する範囲を確認されたい方はこちらのvideoをご覧ください。
 
-- 小指![picture 1](../images/IMG_6006.mov)  
+- 小指![picture 1](images/IMG_6006.mov)  
 - 親指
 
 <details>
