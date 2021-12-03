@@ -31,7 +31,11 @@
 
 稼働する範囲を確認されたい方はこちらのvideoをご覧ください。
 
-- 小指![picture 1](images/IMG_6006.mov)  
+- 小指 
+
+https://user-images.githubusercontent.com/231558/144625838-ece31b23-f787-42c1-a493-4752d8e19240.mov
+
+
 - 親指
 
 <details>
