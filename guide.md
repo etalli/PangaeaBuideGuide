@@ -31,12 +31,11 @@
 
 稼働する範囲を確認されたい方はこちらのvideoをご覧ください。
 
-- 小指 
-
-https://user-images.githubusercontent.com/231558/144625838-ece31b23-f787-42c1-a493-4752d8e19240.mov
 
 
-- 親指
+https://user-images.githubusercontent.com/231558/144742256-06b2d957-e0d9-4dbc-ab57-31baaafac41f.mp4
+
+
 
 <details>
 <summary>Pangaea keyboard のコンセプトは White Paper で説明されています。[この行の先頭の ▶ のクリックで詳細表示します]
